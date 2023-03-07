@@ -12,8 +12,8 @@ public class Main {
             System.out.println("Vessel new max speed: " + v.getMaxSpeed());
             System.out.println("Кількість створених об'єктів: " + Vessel.getCounter());
         }
-        Vessel v1 = new SailingVessel("Sailboat1",20, 5);
-        Vessel v2 = new SailingVessel("Sailboat1",20, 5);
+        WaterTransport v1 = new SailingVessel("Sailboat1",20, 5);
+        WaterTransport v2 = new SailingVessel("Sailboat1",20, 5);
         if (v1.equals(v2)) {
             System.out.println("Об'єкти однакові");
         } else {
