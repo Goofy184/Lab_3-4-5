@@ -1,5 +1,5 @@
 import java.util.Objects;
-public abstract class Vessel implements WaterTransport {
+abstract class Vessel implements WaterTransport {
     private static int counter = 0;
     protected String name;
     protected int maxSpeed;
