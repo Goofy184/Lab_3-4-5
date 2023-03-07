@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Vessel[] vessel = {new SailingVessel("Sailboat1",20, 5), new Submarine("Submarine1",10, true)};
-        for (Vessel v : vessel){
+        WaterTransport[] vessel = {new SailingVessel("Sailboat1",20, 5), new Submarine("Submarine1",10, true)};
+        for (var v : vessel){
             v.PrepareToMovement();
             v.Move();
             System.out.println("Vessel name: " + v.getName());
