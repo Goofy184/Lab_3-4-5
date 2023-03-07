@@ -1,4 +1,4 @@
-class SailingVessel extends Vessel {
+public class SailingVessel extends Vessel {
     private int numberOfSails;
     public SailingVessel(String name, int maxSpeed, int numberOfSails) {
         super(name, maxSpeed);
@@ -12,10 +12,5 @@ class SailingVessel extends Vessel {
     public void Move() {
         System.out.println("Вітрильник рухається...");
     }
-    public int getNumberOfSails() {
-        return numberOfSails;
-    }
-    public void setNumberOfSails(int numberOfSails) {
-        this.numberOfSails = numberOfSails;
-    }
+
 }

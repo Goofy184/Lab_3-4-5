@@ -1,5 +1,5 @@
 import java.util.Objects;
-abstract class Vessel {
+public abstract class Vessel implements WaterTransport {
     private static int counter = 0;
     protected String name;
     protected int maxSpeed;
@@ -12,17 +12,16 @@ abstract class Vessel {
     public abstract void PrepareToMovement();
     public abstract void Move();
 
-    // метод доступу до поля name
     public String getName() {
         return name;
     }
     public void setName(String name) {
         this.name = name;
     }
-    protected int getMaxSpeed() {
+    public int getMaxSpeed() {
         return maxSpeed;
     }
-    protected void setMaxSpeed(int maxSpeed) {
+    public void setMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
     public static int getCounter() {

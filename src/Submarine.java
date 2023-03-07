@@ -11,10 +11,5 @@ class Submarine extends Vessel {
     public void Move() {
         System.out.println("Submarine is moving...");
     }
-    public boolean getIsSubmerged() {
-        return isSubmerged;
-    }
-    public void setIsSubmerged(boolean isSubmerged) {
-        this.isSubmerged = isSubmerged;
-    }
+
 }
